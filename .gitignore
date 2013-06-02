@@ -1,5 +1,38 @@
+# temporary and backup files
 *~
 *.swp
+*.bak
+
+# mac os stuff
 .DS_Store
+
+# directories for local use only
 dump/
 screenshots/
+
+# generated files that can be ignored
+data.html
+balance.html
+export.html
+import.html
+total.html
+
+title_balance.html
+title_export.html
+title_import.html
+title_total.html
+
+heading_balance.html
+heading_export.html
+heading_import.html
+heading_total.html
+
+data_balance.html
+data_export.html
+data_import.html
+data_total.html
+
+balance_20[0-9][0-9].html
+export_20[0-9][0-9].html
+import_20[0-9][0-9].html
+total_20[0-9][0-9].html
