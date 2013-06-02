@@ -1,0 +1,27 @@
+            ]
+    };
+
+    map.areasSettings = {
+        autoZoom: true
+    };
+    map.dataProvider = dataProvider;
+
+    var valueLegend = new AmCharts.ValueLegend();
+    valueLegend.right = 10;
+    valueLegend.minValue = "little";
+    valueLegend.maxValue = "a lot!";
+    map.valueLegend = valueLegend;
+
+    map.write("mapdiv");
+});
+//]]>  
+
+</script>
+
+
+</body>
+
+
+</html>
+
+
