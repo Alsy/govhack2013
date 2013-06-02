@@ -1,6 +1,9 @@
-select  sum(value) as total_trade,
-        sum(if(direction = "Exports", value, 0)) as export_trade,
-        sum(if(direction = "Imports", value, 0)) as import_trade,
+insert
+into    trade_year
+select  sum(value)                                      as total,
+        sum(if(direction = "Exports", value, 0))        as export,
+        sum(if(direction = "Imports", value, 0))        as import,
+        sum(if(direction = "Imports", -value, value))   as balance,
         t.country,
         c.code,
         year
