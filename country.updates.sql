@@ -1,3 +1,5 @@
+alter table country add column alt_country varchar(255);
+
 update  country
 set     country = "Bolivia"
 where   country = "Bolivia, Plurinational State of"
